@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "704533773514",
+    "project_id": "baldi-producciones-9b5jca",
+    "storage_bucket": "baldi-producciones-9b5jca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704533773514:android:1077dae38f99fdb3fd8833",
+        "android_client_info": {
+          "package_name": "com.BaldiProducciones.baldiproducciones"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704533773514-2igfev8dp8i1rb5jdnq8bsasn1ghq8lq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.BaldiProducciones.baldiproducciones",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "704533773514-a3cmhis0g3jb5951jre9ig1aaia7h665.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYVaE_qoYb3ZUpNKgjeJB-UndROdJXZzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704533773514-a3cmhis0g3jb5951jre9ig1aaia7h665.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "704533773514-5k227p63vt6lls4dqvrnuq51mqq24vhv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BaldiProducciones.baldiproducciones"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

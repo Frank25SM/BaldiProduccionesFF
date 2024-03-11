@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>704533773514-5k227p63vt6lls4dqvrnuq51mqq24vhv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.704533773514-5k227p63vt6lls4dqvrnuq51mqq24vhv</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>704533773514-2igfev8dp8i1rb5jdnq8bsasn1ghq8lq.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD4K9rVxfUhYfJ9ckTkl7547nrnygl-Y8g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>704533773514</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.BaldiProducciones.baldiproducciones</string>
+	<key>PROJECT_ID</key>
+	<string>baldi-producciones-9b5jca</string>
+	<key>STORAGE_BUCKET</key>
+	<string>baldi-producciones-9b5jca.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:704533773514:ios:c4e8c1e64b6ed411fd8833</string>
+</dict>
+</plist>
