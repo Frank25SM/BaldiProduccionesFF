@@ -1093,7 +1093,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             }
 
                                                             context.goNamedAuth(
-                                                                'MenuPrincipal',
+                                                                'MenuPrincipalBack',
                                                                 context
                                                                     .mounted);
                                                           },
@@ -1233,7 +1233,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                       }
 
                                                                       context.goNamedAuth(
-                                                                          'MenuPrincipal',
+                                                                          'MenuPrincipalBack',
                                                                           context
                                                                               .mounted);
                                                                     },
@@ -1666,7 +1666,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                             }
 
                                                             context.goNamedAuth(
-                                                                'MenuPrincipal',
+                                                                'MenuPrincipalBack',
                                                                 context
                                                                     .mounted);
                                                           },
@@ -1793,7 +1793,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                                 }
 
                                                                 context.goNamedAuth(
-                                                                    'MenuPrincipal',
+                                                                    'MenuPrincipalBack',
                                                                     context
                                                                         .mounted);
                                                               },

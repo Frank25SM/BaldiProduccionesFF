@@ -72,18 +72,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const MenuPrincipalWidget() : const LoginWidget(),
+          appStateNotifier.loggedIn ? const MenuPrincipalBackWidget() : const LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? const MenuPrincipalWidget() : const LoginWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? const MenuPrincipalBackWidget()
+              : const LoginWidget(),
         ),
         FFRoute(
           name: 'Login',
           path: '/login',
           builder: (context, params) => const LoginWidget(),
+        ),
+        FFRoute(
+          name: 'MenuPrincipalBack',
+          path: '/menuPrincipalBack',
+          builder: (context, params) => const MenuPrincipalBackWidget(),
         ),
         FFRoute(
           name: 'MenuPrincipal',
