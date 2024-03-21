@@ -11,31 +11,27 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
   int get tabBarCurrentIndex =>
       tabBarController != null ? tabBarController!.index : 0;
 
-  // State field(s) for emailAddress_Create widget.
-  FocusNode? emailAddressCreateFocusNode1;
-  TextEditingController? emailAddressCreateController1;
-  String? Function(BuildContext, String?)?
-      emailAddressCreateController1Validator;
-  // State field(s) for emailAddress_Create widget.
-  FocusNode? emailAddressCreateFocusNode2;
-  TextEditingController? emailAddressCreateController2;
-  String? Function(BuildContext, String?)?
-      emailAddressCreateController2Validator;
-  // State field(s) for emailAddress_Create widget.
-  FocusNode? emailAddressCreateFocusNode3;
-  TextEditingController? emailAddressCreateController3;
-  String? Function(BuildContext, String?)?
-      emailAddressCreateController3Validator;
-  // State field(s) for emailAddress_Create widget.
-  FocusNode? emailAddressCreateFocusNode4;
-  TextEditingController? emailAddressCreateController4;
-  String? Function(BuildContext, String?)?
-      emailAddressCreateController4Validator;
-  // State field(s) for password_Create widget.
-  FocusNode? passwordCreateFocusNode;
-  TextEditingController? passwordCreateController;
-  late bool passwordCreateVisibility;
-  String? Function(BuildContext, String?)? passwordCreateControllerValidator;
+  // State field(s) for Nombre widget.
+  FocusNode? nombreFocusNode;
+  TextEditingController? nombreController;
+  String? Function(BuildContext, String?)? nombreControllerValidator;
+  // State field(s) for Apellido widget.
+  FocusNode? apellidoFocusNode;
+  TextEditingController? apellidoController;
+  String? Function(BuildContext, String?)? apellidoControllerValidator;
+  // State field(s) for Telefono widget.
+  FocusNode? telefonoFocusNode;
+  TextEditingController? telefonoController;
+  String? Function(BuildContext, String?)? telefonoControllerValidator;
+  // State field(s) for Correo widget.
+  FocusNode? correoFocusNode;
+  TextEditingController? correoController;
+  String? Function(BuildContext, String?)? correoControllerValidator;
+  // State field(s) for Passsword widget.
+  FocusNode? passswordFocusNode;
+  TextEditingController? passswordController;
+  late bool passswordVisibility;
+  String? Function(BuildContext, String?)? passswordControllerValidator;
   // State field(s) for passwordConfirm widget.
   FocusNode? passwordConfirmFocusNode;
   TextEditingController? passwordConfirmController;
@@ -55,7 +51,7 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
 
   @override
   void initState(BuildContext context) {
-    passwordCreateVisibility = false;
+    passswordVisibility = false;
     passwordConfirmVisibility = false;
     passwordVisibility = false;
   }
@@ -64,20 +60,20 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
   void dispose() {
     unfocusNode.dispose();
     tabBarController?.dispose();
-    emailAddressCreateFocusNode1?.dispose();
-    emailAddressCreateController1?.dispose();
+    nombreFocusNode?.dispose();
+    nombreController?.dispose();
 
-    emailAddressCreateFocusNode2?.dispose();
-    emailAddressCreateController2?.dispose();
+    apellidoFocusNode?.dispose();
+    apellidoController?.dispose();
 
-    emailAddressCreateFocusNode3?.dispose();
-    emailAddressCreateController3?.dispose();
+    telefonoFocusNode?.dispose();
+    telefonoController?.dispose();
 
-    emailAddressCreateFocusNode4?.dispose();
-    emailAddressCreateController4?.dispose();
+    correoFocusNode?.dispose();
+    correoController?.dispose();
 
-    passwordCreateFocusNode?.dispose();
-    passwordCreateController?.dispose();
+    passswordFocusNode?.dispose();
+    passswordController?.dispose();
 
     passwordConfirmFocusNode?.dispose();
     passwordConfirmController?.dispose();

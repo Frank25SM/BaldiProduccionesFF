@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'menu_principal_widget.dart' show MenuPrincipalWidget;
+import 'menu_principal_usuarios_widget.dart' show MenuPrincipalUsuariosWidget;
 import 'package:flutter/material.dart';
 
-class MenuPrincipalModel extends FlutterFlowModel<MenuPrincipalWidget> {
+class MenuPrincipalUsuariosModel
+    extends FlutterFlowModel<MenuPrincipalUsuariosWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

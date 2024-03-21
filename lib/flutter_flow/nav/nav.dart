@@ -71,14 +71,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const MenuPrincipalBackWidget() : const LoginWidget(),
+      errorBuilder: (context, state) => appStateNotifier.loggedIn
+          ? const MenuPrincipalUsuariosWidget()
+          : const LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? const MenuPrincipalBackWidget()
+              ? const MenuPrincipalUsuariosWidget()
               : const LoginWidget(),
         ),
         FFRoute(
@@ -92,9 +93,34 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const MenuPrincipalBackWidget(),
         ),
         FFRoute(
-          name: 'MenuPrincipal',
-          path: '/menuPrincipal',
-          builder: (context, params) => const MenuPrincipalWidget(),
+          name: 'MenuPrincipalUsuarios',
+          path: '/menuPrincipalUsuarios',
+          builder: (context, params) => const MenuPrincipalUsuariosWidget(),
+        ),
+        FFRoute(
+          name: 'Personajes',
+          path: '/personajes',
+          builder: (context, params) => const PersonajesWidget(),
+        ),
+        FFRoute(
+          name: 'Comparsas',
+          path: '/comparsas',
+          builder: (context, params) => const ComparsasWidget(),
+        ),
+        FFRoute(
+          name: 'Paquetes',
+          path: '/paquetes',
+          builder: (context, params) => const PaquetesWidget(),
+        ),
+        FFRoute(
+          name: 'Conocenos',
+          path: '/conocenos',
+          builder: (context, params) => const ConocenosWidget(),
+        ),
+        FFRoute(
+          name: 'Usuario',
+          path: '/usuario',
+          builder: (context, params) => const UsuarioWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
